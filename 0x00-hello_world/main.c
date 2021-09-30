@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-printf("pijpij");
+printf("Holberton School");
 return (0);
 }
