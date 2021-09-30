@@ -7,5 +7,6 @@
  */
 int main(void)
 {
-    return (0);
+printf("pijpij");
+return (0);
 }
