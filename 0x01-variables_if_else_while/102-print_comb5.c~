@@ -1,0 +1,42 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
+/**
+* main - prints the last digit of the random
+* number stored in the variable n
+* Return: Always 0 (Success)
+* the string and is greater than 5
+* the string and is 0
+* the string and is less than 6 and not 0
+*/
+int main(void)
+{
+  int i, j, k, l;
+for (i = 48; i < 56; i++)
+{
+for (j = 48; j <= 56; j++)
+{
+for (k = 48; k <= 57; k++)
+{
+for (l= k + 1; l <= 57; l++)
+{
+putchar(i);
+putchar(j);
+ if ((i != k) && (j != l))
+{
+putchar(k);
+putchar(l);
+}
+if ((k != 99 ) && (l != 9))
+{
+putchar(44);
+putchar(32);
+}
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
