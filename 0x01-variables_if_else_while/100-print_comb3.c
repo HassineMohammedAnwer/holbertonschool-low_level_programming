@@ -12,23 +12,23 @@
 */
 int main(void)
 {
-int i,j;
+int i, j;
 for (i = 48; i < 57; i++)
 {
-for (j = i+1; j <= 57; j++)
+for (j = i + 1; j <= 57; j++)
 {
 putchar(i);
-if ((i != j)&&(i != 56))
+if (i != j)
 {
 putchar(j);
+if ( i != 56)
+{
 putchar(44);
 putchar(32);
 }
-else if (i == 56)
-{
-putchar(j);
 }
 }
 }
+putchar('\n');
 return (0);
 }
