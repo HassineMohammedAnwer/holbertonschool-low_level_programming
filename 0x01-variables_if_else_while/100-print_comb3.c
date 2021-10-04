@@ -21,7 +21,7 @@ putchar(i);
 if (i != j)
 {
 putchar(j);
-if ( i != 56)
+if (i != 56)
 {
 putchar(44);
 putchar(32);
