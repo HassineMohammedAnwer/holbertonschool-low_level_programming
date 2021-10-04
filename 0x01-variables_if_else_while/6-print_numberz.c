@@ -12,14 +12,8 @@
 */
 int main(void)
 {
-i = 97;
-while (i < 123)
-{
-putchar(i);
-i++;
-}
-int i = 65;
-while (i < 91)
+int i = 48;
+while (i < 58)
 {
 putchar(i);
 i++;
