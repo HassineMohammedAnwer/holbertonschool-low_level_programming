@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_alphabet_x10(void) - prints the alphabet
+* print_alphabet_x10 - prints the alphabet x10
 * number stored in the variable n
 * the string and is greater than 5
 * the string and is 0
