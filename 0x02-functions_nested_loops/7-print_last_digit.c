@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* int print_last_digit(int) - prints the last digit of the random
+* int print_last_digit - prints the last digit of the random
 * @n : character
 * Return: Always 0 (Success)
 * the string and is greater than 5
