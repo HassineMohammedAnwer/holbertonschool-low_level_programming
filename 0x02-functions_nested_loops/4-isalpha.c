@@ -2,18 +2,17 @@
 #include "main.h"
 
 /**
-* main - prints the last digit of the random
-* number stored in the variable n
+* _isalpha - prints the last digit of the random
+* @c : character
 * Return: Always 0 (Success)
 * the string and is greater than 5
 * the string and is 0
 * the string and is less than 6 and not 0
 */
-void print_alphabet(void)
+int _isalpha(int c)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
-_putchar(c);
-_putchar('\n');
+if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
+return (1);
+else
 return (0);
 }
