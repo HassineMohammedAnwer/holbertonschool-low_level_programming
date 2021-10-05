@@ -3,7 +3,7 @@
 
 /**
 * print_sign - prints the last digit of the random
-* @c : character
+* @n : character
 * Return: Always 0 (Success)
 * the string and is greater than 5
 * the string and is 0
