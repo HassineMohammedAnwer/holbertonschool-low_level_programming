@@ -2,12 +2,9 @@
 #include "main.h"
 
 /**
-* int print_last_digit - prints the last digit of the random
+* print_last_digit - prints the last digit of the random
 * @n : character
-* Return: Always 0 (Success)
-* the string and is greater than 5
-* the string and is 0
-* the string and is less than 6 and not 0
+* Return: n
 */
 int print_last_digit(int n)
 {
