@@ -17,7 +17,7 @@ for (y = 0; y <= n; y++)
 if (y == 0)
 {
 printf("0");
-continue ;
+continue;
 }
 if ((y * x) < 10)
 printf(",   ");
