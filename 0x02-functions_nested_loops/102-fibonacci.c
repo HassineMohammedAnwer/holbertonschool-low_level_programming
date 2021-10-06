@@ -17,7 +17,10 @@ for (i = 0; i < 48; i++)
 sum = a + b;
 a = b;
 b = sum;
-printf("%d, ", sum);
+if (i == 47)
+printf("%ld", sum);
+else
+printf("%ld, ", sum);
 }
 printf("\n");
 return (0);
