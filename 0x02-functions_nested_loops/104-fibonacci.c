@@ -7,22 +7,25 @@
 */
 int main(void)
 {
-long int smeven = 2;
 int i;
 long int sum = 0;
 long int a = 1;
 long int b = 2;
 printf("1, 2, ");
-for (i = 0; i < 48; i++)
+for (i = 0; i < 98; i++)
 {
 sum = a + b;
 a = b;
 b = sum;
-if (sum > 4000000)
-break;
-if (sum % 2 == 0)
-smeven = smeven + sum;
+if (i == 97)
+printf("%ld", sum);
+else if ( sum < 2147483647)
+printf("%ld, ", sum);
+else
+{
+printf("%ld", sum % 10);
 }
-printf("%ld\n", smeven);
+}
+printf("\n");
 return (0);
 }
