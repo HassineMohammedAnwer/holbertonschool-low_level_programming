@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	long n, i;
+	long n, i; /*Declaration*/
 	n = 612852475143;
-	for (i = 2; i < n; i++)
+	for (i = 2; i < n; i++) /*For statement */
 	{
 		while (n % i == 0)
 			n = n / i;
