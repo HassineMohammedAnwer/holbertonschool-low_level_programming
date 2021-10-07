@@ -3,7 +3,7 @@
 
 /**
  * _isupper - function to look for upper case
- * @c: The character to test 
+ * @c: The character to test
  *
  * Return: 1 if upper case found else 1
  */
