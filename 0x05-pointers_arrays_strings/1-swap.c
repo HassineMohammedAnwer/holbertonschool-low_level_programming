@@ -4,7 +4,7 @@
 /**
  * swap_int - function that swaps the values of two integers.
  * @a: The character to test
- * @b; the other entry to swap with
+ * @b: the other entry to swap with
  * Return: none
  */
 
