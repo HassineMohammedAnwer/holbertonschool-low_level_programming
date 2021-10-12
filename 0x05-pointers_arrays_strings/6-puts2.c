@@ -6,12 +6,12 @@
  * @str: entry string declared in main.c
  * Return:	None
 **/
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int len = _strlen(s), i;
+	int len = _strlen(str), i;
 
 	for (i = 0; i < len; i+=2)
-		_putchar(str[c]);
+		_putchar(str[i]);
 	_putchar('\n');
 }
 
