@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - Write a function that prints a string,
- *         followed by a new line, to stdout.
- * @str: entry string declared in main.c
+ * print_rev - prints a string, in reverse,
+ *             followed by a new line, to stdout.
+ * @s: entry string declared in main.c
  * Return:	None
 **/
 
@@ -14,10 +14,10 @@ void print_rev(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
-	}
 	do
 	{
 		_putchar(s[i]);
 		i --;
-	}
+	}while (i != 0);
 	_putchar('\n');
+}
