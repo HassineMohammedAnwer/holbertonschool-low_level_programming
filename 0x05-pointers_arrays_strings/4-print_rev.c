@@ -6,19 +6,15 @@
  * @s: entry string declared in main.c
  * Return:	None
 **/
-
 void print_rev(char *s)
 {
-	int i ;
-	i = _strlen(s);
-
-	wile (i != 0)
-	{
-		i--;
-		_putchar(s[i]);
-	}
-	_putchar('\n');
+	int x;
+	int len = _strlen(s);
+	for (x = len - 1; x >= 0; x--)
+		putchar(s[x]);
+	putchar('\n');
 }
+
 /**	2nd function
  * _strlen - function that returns the length of a string.
  * @s: The string to enter
