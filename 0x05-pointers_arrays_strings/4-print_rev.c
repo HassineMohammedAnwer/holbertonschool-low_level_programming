@@ -10,25 +10,26 @@ void print_rev(char *s)
 {
 	int x;
 	int len = _strlen(s);
+
 	for (x = len - 1; x >= 0; x--)
 		putchar(s[x]);
 	putchar('\n');
 }
 
-/**	2nd function
+/**
  * _strlen - function that returns the length of a string.
  * @s: The string to enter
  *
  * Return: strlen success
- */
+**/
 
 int _strlen(char *s)
 {
-        int i = 0;
+	int i = 0;
 
-        while (s[i] != '\0')
-        {
-                i++;
-        }
-        return (i);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
