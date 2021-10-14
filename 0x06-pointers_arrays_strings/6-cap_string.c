@@ -5,12 +5,12 @@
  * cap_string - a function that capitalizes all words of a string.
  *
  * @s: entry string to transform
+ *
  * Return: same string capitalized
  */
 char *cap_string(char *s)
 {
 	int i, j;
-
 	char sy[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (i = 0; s[i] != '\0'; i++)
