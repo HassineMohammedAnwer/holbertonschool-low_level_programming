@@ -7,7 +7,7 @@
  * @s1: first entry string
  * @s2: second entry string
  *
- * Return: integer
+ * Return: integer en utilisant l'ordre lexicographique
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -18,5 +18,5 @@ int _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-	return (s1 - s2);
+	return (*s1 - *s2);
 }
