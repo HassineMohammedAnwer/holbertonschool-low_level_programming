@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * __memcpy - a function that copies memory area.
+ * _memcpy - a function that copies memory area.
  * @src: memory area
  * @dest: memory area destination
  * @n: the n bytes of the memory area to be copied
