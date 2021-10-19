@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strstr -  finds the first occurrence of the substring needle in the string haystack
+ * _strstr -  finds the first occurrence of the substring needle in haystack
  * @haystack: string
  * @needle: substring
  * Return: haystack or 0
