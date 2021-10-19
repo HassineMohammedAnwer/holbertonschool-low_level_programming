@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * memset - a function that fills memory with a constant byte.
+ * _memset - a function that fills memory with a constant byte.
  * @s: memory area
  * @b: constant byte
  * @n: the first n bytes of the memory area to be filled
