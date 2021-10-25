@@ -8,11 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	unsigned int x;
-
-	x = 1;
-	i = 1;
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -20,12 +15,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		while (i < argc)
-		{
-			x = x * atoi(argv[i]);
-			i++;
-		}
-		printf("%d\n", x);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 		return (0);
 	}
 }
+
+
