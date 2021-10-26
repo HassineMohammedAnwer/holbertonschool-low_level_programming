@@ -19,5 +19,6 @@ char *create_array(unsigned int size, char c)
 		return (0);
 	for (i = 0; i < size; i++)
 		*(chars + i) = c;
+	*(p + i) = '\0';
 	return (chars);
 }
