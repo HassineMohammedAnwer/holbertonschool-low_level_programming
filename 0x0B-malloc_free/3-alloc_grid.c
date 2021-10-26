@@ -12,9 +12,11 @@ int **alloc_grid(int width, int height)
 	int **chars;
 	int i = 0, j = 0;
 
-	chars = (int **) malloc(sizeof(int *) * height);
 	if (height <= 0 || width <= 0)
 		return (NULL);
+	chars = (int **) malloc(sizeof(int *) * height);
+	if (chars == NULL)
+		return(NULL);
 	while (i < height)
 	{
 		chars[i] = (int *) malloc(sizeof(int) * width);
