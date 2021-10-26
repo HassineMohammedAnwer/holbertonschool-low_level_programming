@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _ strdup - duplicates an array of chars
+ * _strdup - duplicates an array of chars
  *
  * @str: array of chars
  *
