@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- *
- *
- *
+ * main - prints the minimum number of coins to make change.
+ * @argc : length of argv
+ * @argv : arguments of the program
+ * Return : 0 on success, 1 if argc != 2.
  */
 int main(int argc, char *argv[])
 {
