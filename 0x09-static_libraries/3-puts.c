@@ -1,23 +1,18 @@
 #include "main.h"
 
 /**
- * _puts - Write a function that prints a string,
- *         followed by a new line, to stdout.
- * @str: entry string declared in main.c
- * Return:	None
-**/
-
-void print_rev(char *s)
+ *  * _puts - print a string
+ *   * @str:pointer char
+ *    * return:void
+ *     */
+void _puts(char *str)
 {
-	int i;
+		int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	}
-	}
-	do
-	{
-		_putchar(s[i]);
-		i --;
-	}
-	_putchar('\n');
+			for (i = 0; str[i] != '\0'; i++)
+					{
+								_putchar(str[i]);
+									}
+			_putchar('\n');
+			return;
+}
