@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat - concatenates two strings.
+ * *string_nconcat - concatenates two strings.
  * @s1: first input
  * @s2: second input
  * @n: the n first bytes
