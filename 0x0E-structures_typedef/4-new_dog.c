@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * *new_dog -  a function that creates a new dog.
@@ -8,18 +9,9 @@
  * Return: new dog
  * Description: betty
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(__attribute__((unused))char *name, __attribute__((unused))float age, __attribute__((unused))char *owner)
 {
-	if (d != NULL)
-	{
-		if (d->name == NULL)
-			printf("Name: (nil)\n");
-		else
-			printf("Name: %s\n", d->name);
-		 printf("Age: %f\n", d->age);
-		if (d->owner == NULL)
-			printf("Owner: (nil)\n");
-		else
-			printf("Owner: %s\n", d->owner);
-	}
+dog_t *dog;
+dog = malloc(sizeof(char));
+return (dog);
 }
