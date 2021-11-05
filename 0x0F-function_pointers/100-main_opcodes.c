@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 	size = atoi(argv[1]);
-	if (size > 0)
+	if (size >= 0)
 	{
 		arr = (char *)main;
 		for (i = 0; i < size; i++)
