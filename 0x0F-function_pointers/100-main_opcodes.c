@@ -19,23 +19,20 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 	size = atoi(argv[1]);
-	if (size >= 0)
-	{
-		arr = (char *)main;
-		for (i = 0; i < size; i++)
-		{
-			if (i == size)
-			{
-				printf("%02hhx\n", arr[i]);
-				break;
-			}
-			printf("%02hhx", arr[i]);
-		}
-	}
-	else
+	if (size < 0)
 	{
 		printf("Error\n");
 		exit(2);
+	}
+	arr = (char *)main;
+	for (i = 0; i < size; i++)
+	{
+		if (i == size - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx", arr[i]);
 	}
 	return (0);
 }
