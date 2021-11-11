@@ -2,7 +2,7 @@
 void first(void)__attribute__ ((constructor));
 /**
  * first - check the code
- * @constructor: parameter used when  before main is executed
+ *
  * Return: none.
  */
 void first(void)
