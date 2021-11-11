@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_list - check the code
+ * @h: list
+ * Return: Always number of elements.
  */
 size_t print_list(const list_t *h)
 {
