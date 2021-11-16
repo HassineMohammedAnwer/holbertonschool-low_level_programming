@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - check the code
+ * print_listint - check the code
  * @h: list
  * Return: Always number of elements.
  */
