@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - check the code
+ * insert_nodeint_at_index - check the code
  * @head: pointer to head of the list
  * @n: int to add
+ * @idx: int
  * Return: Adress of the new element.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
