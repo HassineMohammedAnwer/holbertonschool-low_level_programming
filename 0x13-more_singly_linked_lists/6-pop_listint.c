@@ -10,10 +10,9 @@ int pop_listint(listint_t **head)
 	listint_t *h;
 	int n;
 
-	h = malloc(sizeof(listint_t));
-	if (*head == NULL || h == NULL)
-		return (0);
 	h = *head;
+	if (h == NULL)
+		return (0);
 	n = h->n;
 	*head = h->next;
 	return (n);
