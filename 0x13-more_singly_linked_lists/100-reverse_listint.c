@@ -10,7 +10,7 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *h, *l = NULL;
 
-	if (!head)
+	if (*head == NULL)
 		return (NULL);
 	while (h)
 	{
