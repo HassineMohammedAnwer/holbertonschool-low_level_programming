@@ -1,19 +1,20 @@
 #include "lists.h"
 
 /**
- * free_listint2 - check the code
+ * pop_listint - check the code
  * @head: list
- * Return: none.
+ * Return: n.
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *h;
 	int n;
 
-	h = malloc(sizeof(list_t));
-	if (*head == NULL)
+	h = malloc(sizeof(listint_t));
+	if (*head == NULL || h == NULL)
 		return (0);
-	n = head->n;
-	*head = head->next;
+	h = *head;
+	n = h->n;
+	*head = h->next;
 	return (n);
 }
