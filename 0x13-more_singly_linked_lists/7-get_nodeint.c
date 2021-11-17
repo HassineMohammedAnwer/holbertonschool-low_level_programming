@@ -1,0 +1,28 @@
+#include "lists.h"
+
+/**
+ * free_listint2 - check the code
+ * @head: list
+ * Return: none.
+ */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	listint_t *h;
+	unsigned int i = 0;
+
+	if (!head)
+		return (NULL);
+	h = head;
+	while (i <= index || h->next != NULL)
+	{
+		h = h->next;
+		i++;
+		head = h;
+	}
+	if (i < index)
+		return (NULL);
+	else
+	{
+		return (h);
+	}
+}
