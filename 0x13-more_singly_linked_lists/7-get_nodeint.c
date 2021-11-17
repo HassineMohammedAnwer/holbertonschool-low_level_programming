@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * free_listint2 - check the code
+ * get_nodeint_at_index - check the code
  * @head: list
- * Return: none.
+ * @index: node's number
+ * Return: node's pointer.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -17,7 +18,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		h = h->next;
 		i++;
-		head = h;
 	}
 	if (i < index)
 		return (NULL);
