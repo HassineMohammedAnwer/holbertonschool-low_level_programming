@@ -32,8 +32,10 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int d;
 
 	d = f_num(n);
-	if (index > d)
+	if (index > 63)
 		return (-1);
+	if (index > d)
+		return (0);
 	b = n >> index;
 	return(b & 1);
 }
