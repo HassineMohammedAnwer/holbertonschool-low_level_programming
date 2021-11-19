@@ -2,7 +2,7 @@
 /**
  * flip_bits - check the code.
  * @n: int(decimal) to check
- * @index: index
+ * @m: bit
  * Return: number of bits to be flipped
  *
  */
