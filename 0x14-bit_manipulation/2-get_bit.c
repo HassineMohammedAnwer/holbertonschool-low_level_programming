@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * f_num - function return length of int and writes it.
- * @x: int
+ * @u: int
  *
  * Return: counter
  *
@@ -37,5 +37,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (index > d)
 		return (0);
 	b = n >> index;
-	return(b & 1);
+	return (b & 1);
 }
