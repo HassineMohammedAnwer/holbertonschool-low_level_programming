@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
-	int fd, x, y, td, r;
+	int fd, f, t, td, r;
 
 	if (argc != 3)
 	{
@@ -23,14 +23,9 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	td = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
-	if (td == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
-	}
 	while ((r = read(fd, buffer, 1024)) > 0)
 	{
-		if (write(td, buffer, r) != r)
+		if (write(td, buffer, r) != r || td < 0)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fd);
@@ -42,13 +37,13 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	x = close(fd);
-	y = close(td);
-	if (x < 0 || y < 0)
+	f = close(fd);
+	t = close(td);
+	if (f < 0 || t < 0)
 	{
-		if (x < 0)
+		if (f < 0)
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		if (y < 0)
+		if (t < 0)
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", td);
 		exit(100);
 	}
