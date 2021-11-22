@@ -19,6 +19,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 	sizrd = read(fd, buffer, letters + '\0');
+	if (sizrd == 0)
+		return (0);
 	close(fd);
 	sizwr = write(1, buffer, sizrd);
 	if (sizwr == -1)
