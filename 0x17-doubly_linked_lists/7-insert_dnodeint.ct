@@ -1,0 +1,64 @@
+#include "lists.h"
+
+/**
+ * insert_dnodeint_at_index - inserts a new node at a given position.
+ * @h:list
+ * @idx:int index
+ * @n:int to insert
+ * Return: new node on success
+ */
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+{
+	unsigned int i = 0;
+	dlistint_t *b, *new;
+	unsigned int len = temp_dlist_len(h);
+
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+	b = *h;
+	while (b)
+	{
+		if (i == idx - 1)
+			break;
+		else if (i < idx - 1 && b == NULL)
+			return (NULL);
+		b = b->next;
+		i++;
+	}
+		new = malloc(sizeof(dlistint_t));
+		if (new == NULL)
+			return (NULL);
+	if (len == idx)
+		return (add_dnodeint_end(h, n));
+	else if (len < idx)
+		return (NULL);
+	b->next->prev = new;
+	new->next = b->next;
+	b->next = new;
+	new->prev = b;
+	new->n = n;
+	return (new);
+}
+/**
+ * dlistint_len - returns the number of elements in a linked dlistint_t list.
+ * @h: pointer for list
+ *
+ * Return: the number of elements in a linked dlistint_t list.
+ */
+
+unsigned int temp_dlist_len(dlistint_t **h)
+{
+	unsigned int nn = 0;
+	dlistint_t *t;
+
+	if (!h)
+		return (0);
+	t = *h;
+	while (t)
+	{
+		t = t->next;
+		nn++;
+	}
+
+	return (nn);
+}
