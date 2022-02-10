@@ -3,6 +3,7 @@
 /**
  * hash_table_create - check the code for
  *
+ * @size: size of table
  * Return: pointer to the newly created hash table.
  */
 hash_table_t *hash_table_create(unsigned long int size)
